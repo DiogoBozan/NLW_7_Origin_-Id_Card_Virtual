@@ -2,7 +2,7 @@
 
 #### hidden field with metadata 👇
 
-<div class="meta_for_parser tablespecs" style="visibility:hidden">https://www.youtube.com/watch?v=3LqhEEw62N0&ab_channel=Rocketseat</div>
+<div class="meta_for_parser tablespecs" style="visibility:hidden"> {https://www.youtube.com/watch?v=3LqhEEw62N0&ab_channel=Rocketseat}</div>
 
 #### hidden field with metadata 👆
 
