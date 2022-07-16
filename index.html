@@ -24,29 +24,33 @@
           <img src="images/paje_avatar.jpeg" width="80" alt="Photo Profile" />
         </div>
 
-        <h1>Diogo Bozan</h1>
+        <h1 id="userName">Diogo Bozan</h1>
         <a href="https://github.com/DiogoBozan" target="_blank">
-          <img src="images/github.svg" alt="Github Icon" /> bozan.d.f</a
+          <img src="images/github.svg" alt="Github Icon" />bozan.d.f</a
         >
 
         <p>A programming student with a focus on web developer</p>
-        <ul>
-          <li>
+
+        <ul id="socialLinks">
+          <li class="youtube">
             <a href="https://youtube.com/diogobozan" target="_blank">
               <img src="images/youtube.svg" alt="Youtube Icon" />
             </a>
           </li>
-          <li>
+
+          <li class="facebook">
             <a href="https://facebook.com/diogobozan" target="_blank">
               <img src="images/facebook.svg" alt="Facebook Icon" />
             </a>
           </li>
-          <li>
+
+          <li class="instagram">
             <a href="https://instagram.com/bozan.d.f" target="_blank">
               <img src="images/instagram.svg" alt="Instagram Icon" />
             </a>
           </li>
-          <li>
+
+          <li class="twitter">
             <a href="https://twitter.com/diogobozan" target="_blank">
               <img src="images/twitter.svg" alt="twitter Icon" />
             </a>
@@ -54,5 +58,26 @@
         </ul>
       </div>
     </main>
+
+    <script>
+      const linksSocialMedia = {
+        github: "DiogoBozan",
+        youtube: "diogobozan",
+        twitter: "diogobozan",
+        facebook: "diogobozan",
+        instagram: "bozan.d.f",
+      };
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute("class");
+
+          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`;
+
+          alert(li.children[0].href);
+        }
+      }
+      changeSocialMediaLinks();
+    </script>
   </body>
 </html>
