@@ -21,15 +21,22 @@
           <span>
             <img src="images/stamp.svg" alt="Stamp Avatar" />
           </span>
-          <img src="images/paje_avatar.jpeg" width="80" alt="Photo Profile" />
+          <img
+            id="userPhoto"
+            src="images/avatar_bozan.jpg"
+            width="80"
+            alt="Photo Profile"
+          />
         </div>
 
-        <h1 id="userName">Diogo Bozan</h1>
-        <a href="https://github.com/DiogoBozan" target="_blank">
+        <h1 id="userName">
+          <span id="userLogin">Diogo Bozan</span>
+        </h1>
+        <a id="userLink" href="https://github.com/DiogoBozan" target="_blank">
           <img src="images/github.svg" alt="Github Icon" />bozan.d.f</a
         >
 
-        <p>A programming student with a focus on web developer</p>
+        <p id="userBio">A programming student with a focus on web developer</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -58,26 +65,6 @@
         </ul>
       </div>
     </main>
-
-    <script>
-      const linksSocialMedia = {
-        github: "DiogoBozan",
-        youtube: "diogobozan",
-        twitter: "diogobozan",
-        facebook: "diogobozan",
-        instagram: "bozan.d.f",
-      };
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute("class");
-
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`;
-
-          alert(li.children[0].href);
-        }
-      }
-      changeSocialMediaLinks();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
